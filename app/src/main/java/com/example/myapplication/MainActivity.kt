@@ -94,7 +94,8 @@ class MainActivity : AppCompatActivity() {
                 val color = hexColorString.toColorInt()
                 colorDisplayView.setBackgroundColor(color)
             } catch (_: IllegalArgumentException) {
-                Toast.makeText(this, "Error: Invalid color format generated.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Error: Invalid color format generated.", Toast.LENGTH_SHORT)
+                    .show()
                 colorDisplayView.setBackgroundColor(defaultDisplayColor) // Reset to default
             }
         } else {
